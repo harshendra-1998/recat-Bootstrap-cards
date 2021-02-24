@@ -27,7 +27,7 @@ export default function App() {
             src="https://www.w3schools.com/howto/img_avatar.png"
           />
           <section className="card-body">
-            <p>{datab.name}</p>
+            <h3>{datab.name}</h3>
             <p>
               <i class="far fa-envelope" /> {datab.email}
             </p>
