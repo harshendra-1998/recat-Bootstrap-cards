@@ -72,29 +72,28 @@ export default function App() {
           </div>
         </div>
       ))}
-      <modal class="modal fade" id="myModal">
-        <div class="modal-dialog">
+      <modal className="modal fade" id="myModal" style={{borderRadius:"10px"}}>
+        <div class="modal-dialog" style={{borderRadius:"10px"}}>
           <div class="modal-content" />
-          <div className="moadal-header">
-            <h2>Edit</h2>
+          <div className="moadal-header" style={{borderRadius:"10px"}}>
+            <h2 className="col-3">Edit</h2>
           </div>
           <div className="modal-body">
-            <div className="form-group">
-              <label for="email">Name</label>
-              <input
-                type="name"
-                className="form-control"
-                id="email"
-                placeholder="Enter email"
-                name="email"
-              />
-            </div>
             <div className="form-group">
               <label for="email">Email</label>
               <input
                 type="email"
                 className="form-control"
                 name="email"
+                value="hello"
+              />
+            </div>
+            <div className="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="number"
+                className="form-control"
+                name="phone"
                 value="uhds"
               />
             </div>
