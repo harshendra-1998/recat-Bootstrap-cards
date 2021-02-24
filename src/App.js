@@ -40,7 +40,7 @@ export default function App() {
               {datab.address.zipcode}{" "}
             </p>
             <p>
-              Website : <a href={datab.website}>{datab.website}</a>
+              <i class="fas fa-globe"></i>  <a href={datab.website}>https://{datab.website}</a>
             </p>
             <p>Company : {datab.company.name}</p>
           </section>
