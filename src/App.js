@@ -64,7 +64,7 @@ export default function App() {
         </div>
         </div>
       ))}
-      <modal class="modal" id="myModal">
+      <modal class="modal fade" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content" />
           <div className="moadal-header">
