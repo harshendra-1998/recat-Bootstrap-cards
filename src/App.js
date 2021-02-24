@@ -15,8 +15,9 @@ export default function App() {
   return (
     <div className="row">
       {data.map(datab => (
+        <div style={{padding:"10px"}} className=" col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div
-          className="card col-sm-12 col-md-6 col-lg-4 col-xl-3"
+          className="card"
           style={{ flexMargin: "10px" }}
           key={datab.id}
           id={"cardd" + datab.id}
@@ -43,7 +44,7 @@ export default function App() {
             </p>
             <p>Company : {datab.company.name}</p>
           </section>
-          <ul className="nav nav-justified">
+          <ul className="nav nav-justified card-footer">
             <li className="nav-item">
               <a className="nav-link hearts" style={{ color: "red" }}>
                 <i class="far fa-heart" />
@@ -60,6 +61,7 @@ export default function App() {
               </a>
             </li>
           </ul>
+        </div>
         </div>
       ))}
       <modal class="modal" id="myModal">
