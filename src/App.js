@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="row">
       {data.map(datab => (
-        <div style={{padding:"10px"}} className=" col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div style={{padding:"10px"}} className="cardcell col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div
           className="card"
           style={{ flexMargin: "10px" }}
