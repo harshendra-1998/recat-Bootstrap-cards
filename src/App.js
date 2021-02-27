@@ -72,50 +72,61 @@ export default function App() {
           </div>
         </div>
       ))}
-      <modal className="modal fade" id="myModal" style={{borderRadius:"10px"}}>
-        <div class="modal-dialog" style={{borderRadius:"10px"}}>
-          <div class="modal-content" />
-          <div className="moadal-header" style={{borderRadius:"10px"}}>
-            <h2 className="col-3">Edit</h2>
-          </div>
-          <div className="modal-body">
-            <div className="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                className="form-control"
-                name="email"
-                value="hello"
-              />
+
+      <modal
+        className="modal fade"
+        id="myModal"
+        tabindex="-1"
+        style={{ borderRadius: "10px" }}
+        role="dialog"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div className="moadal-header" style={{ borderRadius: "10px" }}>
+                <h2 className="col-3">Edit</h2>
+              </div>
+              <div className="modal-body">
+                <div className="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    name="email"
+                  />
+                </div>
+                <div className="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="number"
+                    className="form-control"
+                    name="phone"
+                  />
+                </div>
+             
+              
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  data-dismiss="modal"
+                >
+                  Done
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  Close20
+                </button>
+            
             </div>
-            <div className="form-group">
-              <label for="phone">Phone</label>
-              <input
-                type="number"
-                className="form-control"
-                name="phone"
-                value="uhds"
-              />
-            </div>
-          </div>
-          <div className="modal-footer">
-            <button
-              type="button"
-              className="btn btn-primary"
-              data-dismiss="modal"
-            >
-              Done
-            </button>
-            <button
-              type="button"
-              className="btn btn-danger"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
           </div>
         </div>
       </modal>
+
+     
     </div>
   );
 }
